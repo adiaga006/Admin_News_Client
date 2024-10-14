@@ -19,7 +19,7 @@ const Sidebar = () => {
         localStorage.removeItem('mewsToken')
         localStorage.clear(); // Xóa tất cả dữ liệu trong localStorage
         dispatch({ type: 'logout', payload: '' })
-        navigate('/login', { replace: true }); 
+        navigate('', { replace: true }); 
     }
     return (
         <div className='w-[250px] h-screen fixed left-0 top-0 bg-white'>
