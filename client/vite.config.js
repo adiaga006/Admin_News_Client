@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',  // Backend server của bạn
+        target: 'https://news-backend-mu.vercel.app',  // Backend server của bạn
         changeOrigin: true,
         secure: false,
       },
