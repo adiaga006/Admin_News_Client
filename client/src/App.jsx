@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login />} />
+        <Route path='' element={<Login />} />
         <Route path='/dashboard' element={<ProtectDashboatd />} >
         <Route path='' element={<MainLayout />}>
           <Route path='' element={store.userInfo?.role === 'admin' ? <Navigate to='admin' /> : <Navigate to='writer' />} />
